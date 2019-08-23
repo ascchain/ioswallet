@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" >
+    <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <meta HTTP-EQUIV="expires" CONTENT="0">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .err{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: 100% 100%;
+        }
+        p{
+            margin-top: 20px
+        }
+    </style>
+</head>
+<body>
+    <div id="home" onclick="gohome()" class="err">
+        <div>
+            <img width="150" src="./026b97252629c50234527407b7e164ea.png" alt="">
+            <p>加载失败,请点击刷新!</p>
+        </div>
+    </div>
+</body>
+<script>
+    function gohome () {
+        location = 'https://s2.j10kb.cn/index.html?t='+Math.random()
+    }
+</script>
+</html>
